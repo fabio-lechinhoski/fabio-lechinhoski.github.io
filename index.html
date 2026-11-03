@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fábio Lechinhoski | Desenvolvedor Front-end & UI/UX</title>
+  <meta name="description" content="Portfólio de Desenvolvimento de Software de Fábio Lechinhoski. Projetos em React, TypeScript, JavaScript, HTML5 e CSS3.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+    .container { max-width: 960px; margin: 0 auto; }
+    header {
+      padding: 4.5rem 0 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.12);
+      color: #60a5fa;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      border: 1px solid rgba(59, 130, 246, 0.25);
+    }
+    h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+    .subtitle { font-size: 1.15rem; color: var(--muted); max-width: 680px; margin-bottom: 1.75rem; }
+    .links { display: flex; gap: 0.85rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.92rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-outline { border: 1px solid var(--border); color: var(--text); background: var(--card-bg); }
+    .btn-outline:hover { border-color: var(--muted); }
+    section { padding: 3.5rem 0; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.4rem; margin-bottom: 1.75rem; font-weight: 600; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .skill-tag {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.95rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      color: #d1d5db;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover { transform: translateY(-3px); border-color: #374151; }
+    .card-tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: #60a5fa; font-weight: 600; }
+    .card h3 { font-size: 1.3rem; margin: 0.5rem 0 0.75rem; }
+    .card p { color: var(--muted); font-size: 0.94rem; margin-bottom: 1.25rem; }
+    .tech-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+    .tech-item { font-size: 0.76rem; background: rgba(255,255,255,0.05); padding: 0.25rem 0.6rem; border-radius: 4px; color: #cbd5e1; }
+    .card-actions { display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    .card-link { color: var(--text); text-decoration: none; font-size: 0.88rem; font-weight: 500; }
+    .card-link:hover { color: #60a5fa; }
+    footer { padding: 2.5rem 0; text-align: center; color: var(--muted); font-size: 0.88rem; }
+    @media (max-width: 600px) { h1 { font-size: 2rem; } header { padding: 3rem 0 2rem; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Sistemas de Informação • Front-end & UI/UX</span>
+      <h1>Fábio Lechinhoski</h1>
+      <p class="subtitle">
+        Desenvolvedor de Software com sólida bagagem em Design de Interiores. Combino engenharia de software, código limpo e visão espacial para construir aplicações web intuitivas, acessíveis e orientadas a problemas reais.
+      </p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/fabio-lechinhoski/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/fabio-lechinhoski" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        <a href="mailto:fabio.lechinhoski@gmail.com" class="btn btn-outline">fabio.lechinhoski@gmail.com</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Stack & Competências Técnicas</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript (ES6+)</span>
+        <span class="skill-tag">HTML5 Semântico</span>
+        <span class="skill-tag">CSS3 (Flexbox & Grid)</span>
+        <span class="skill-tag">Vite</span>
+        <span class="skill-tag">Testes Unitários</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Google AI Studio / Gemini API</span>
+        <span class="skill-tag">UI/UX & Prototipação</span>
+        <span class="skill-tag">Levantamento de Requisitos</span>
+        <span class="skill-tag">SQL & Banco de Dados</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projetos em Produção</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <div>
+            <span class="card-tag">SaaS / Ferramenta Técnica</span>
+            <h3>ArchiCalc</h3>
+            <p>
+              Calculadora técnica de engenharia e interiores para dimensionamento de revestimentos (com margem de recorte), pintura e carga térmica (BTUs), com visualização de malha técnica, geração de memorial em PDF e exportação de script Python.
+            </p>
+            <div class="tech-list">
+              <span class="tech-item">React</span>
+              <span class="tech-item">TypeScript</span>
+              <span class="tech-item">Vite</span>
+              <span class="tech-item">Testes Unitários</span>
+              <span class="tech-item">Google AI Studio</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://fabio-lechinhoski.github.io/archcalc/" target="_blank" rel="noopener" class="card-link">🚀 Abrir Aplicação</a>
+            <a href="https://github.com/fabio-lechinhoski/archcalc" target="_blank" rel="noopener" class="card-link">💻 Ver Código no GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="card-tag">Aplicação Web Multi-página</span>
+            <h3>Plataforma Web — Design de Interiores</h3>
+            <p>
+              Aplicação web responsiva codificada do zero para exibição de portfólio arquitetônico residencial e corporativo. Inclui galerias interativas, janelas modais, validação de formulários, otimização de performance (lazy loading) e SEO técnico.
+            </p>
+            <div class="tech-list">
+              <span class="tech-item">HTML5 Semântico</span>
+              <span class="tech-item">CSS3 Grid/Flexbox</span>
+              <span class="tech-item">Vanilla JavaScript</span>
+              <span class="tech-item">Acessibilidade (WCAG)</span>
+              <span class="tech-item">GitHub Pages</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://fabio-lechinhoski.github.io/design-de-interiores/" target="_blank" rel="noopener" class="card-link">🚀 Abrir Aplicação</a>
+            <a href="https://github.com/fabio-lechinhoski/design-de-interiores" target="_blank" rel="noopener" class="card-link">💻 Ver Código no GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Fábio Lechinhoski • Rio Negro, PR • Desenvolvido com HTML5 e CSS3</p>
+    </footer>
+  </div>
+</body>
+</html>
